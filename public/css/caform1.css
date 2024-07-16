@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.2s ease;
+}
+
+body {
+    background-image: url("https://drive.google.com/uc?export=view&id=1dxaKf6QXShOSYwWubw7gWmExxjVxKBX9");
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
+
+.Rpreload {
+    margin-top: -65px;
+}
+
+#Vedant #container {
+    box-sizing: unset;
+}
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 70%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    width: 70vw;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+.content p{
+    width: 70vw;
+    text-align: left;
+}
+
+.faq{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.text-3xl{
+    font-weight: 600;
+    margin-top: 115px;
+    font-size: 200%;
+    font-family: Helvetica;
+    color: white;
+    letter-spacing: 0.4px;
+}
+
+.faq .text-3xl{
+    margin-top: 20px;
+}
+
+.line{
+    background-color: white;
+    padding-top: 2px;
+    width: 6rem;
+    margin-bottom: 8vh;
+    margin-top: 15px;
+
+}

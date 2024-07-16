@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'Proxima';
+    src: url(./Proxima\ Nova\ Font.otf);
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url(./Helvetica-Neue-Bold_22498.ttf);
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    /* background: url(https://drive.google.com/uc?export=view&id=1gLKWI7qqmZ_yVqSmVm8Cem1omz6Ra_Rh); */
+    background-color: #18191F;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#spons .past_sponsors{
+    text-align: center;
+    /* width: 30rem; */
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    margin-bottom: 3.3rem;
+    color: white;
+}
+
+#spons .text{
+    font-family: Helvetica;
+    font-size: 3.125rem;
+    /* background-color: rgba(102, 101, 101,0.6); */
+    /* padding: 1.5rem; */
+    /* padding-top: rem; */
+    /* border: 2px solid white; */
+    /* border-radius: 2rem; */
+}
+
+#spons .line{
+    width: 10rem;
+    padding-bottom: 2.2rem;
+    border-top: 2px solid white;
+}
+
+#spons .line1{
+    width: 10rem;
+    /* padding-bottom: -2.2rem; */
+    border-top: 2px solid white;
+}
+
+#spons .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#spons .flexr{
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* margin-inline: rem; */
+}
+
+#spons .flexr img{
+    padding-inline: 2rem;
+    padding-bottom: 2.2rem;
+}
+
+
+#spons img {
+    height: 6.5rem;
+    width: auto;
+}
+
+#spons .white {
+    font-family: Proxima;
+    text-align: center;
+    color: white;
+    padding-top: 1.3rem;
+    padding-bottom: 0.4rem;
+    font-size: 2rem;
+}
+
+#spons .white1 {
+    font-family: Proxima;
+    text-align: center;
+    color: white;
+    /* padding-top: 3.5rem; */
+    padding-bottom: 0.6rem;
+    font-size: 2rem;
+}
+
+#spons .border {
+    padding-top: 0.5rem;
+    border-top: 2px solid white;
+    border-width: 20%;
+}
+
+#spons .box {
+    height: auto;
+    width: 15rem;
+    border-top: 2px solid whitesmoke;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+#spons .bgwhite{
+    background-color: white;
+}
+
+#spons .autowidth{
+    height: auto;
+    /* width: 3rem; */
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+}
+
+/* @media(max-width:480px){
+    #spons .bank{
+        width: 80%;
+        height: auto;
+    }
+    #spons .text{
+        text-align: center;
+    }
+} */
+
+/* Responsive */
+
+
+@media(min-width:500px) and (max-width:800px) {
+    * {
+        font-size: 80%;
+    }
+
+    /* font-size: 2rem; */
+
+}
+
+@media (min-width:300px) and (max-width: 500px) {
+    * {
+        font-size: 65%;
+    }
+
+}
+
+@media (min-width: 250px) and (max-width: 300px) {
+    * {
+        font-size: 50%;
+    }
+
+}

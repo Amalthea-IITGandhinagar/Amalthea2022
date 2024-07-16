@@ -1,0 +1,696 @@
+@font-face {
+    font-family: Helvetica_Bold;
+    src: url("./Helvetica-Neue-Bold_22498.ttf");
+}
+
+@font-face {
+    font-family: Proxima_Bold;
+    font-weight: 600;
+    src: url("./FontsFree-Net-Proxima-Nova-Bold.otf");
+}
+
+@font-face {
+    font-family: Helvetica_Medium;
+    src: url("./HelveticaNeue-Medium.otf");
+}
+
+@font-face {
+    font-family: Proxima;
+    font-weight: 900;
+    src: url("./Proxima\ Nova\ Font.otf");
+}
+
+/* 
+#Vedant *{
+    font-family: 'Proxima';
+} */
+
+#Vedant .vbamlhead {
+
+    margin-top: 0rem;
+    font-family: 'Proxima';
+
+    color: #ae0957;
+    font-weight: 600;
+    font-size: 2.2rem;
+    margin-bottom: 17px;
+}
+
+.vbiitgn {
+    margin-top: -0.2rem;
+}
+
+#Vedant .vbadd {
+    display: flex;
+}
+
+#Vedant .vblocation {
+
+    padding-right: 0.5rem;
+    font-size: 1.5rem;
+
+    display: flex;
+    align-items: center;
+}
+
+#Vedant .vbmail1 {
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+#Vedant .vbmaillo {
+    font-size: 1.8rem;
+}
+
+#Vedant .vbmaillo2 {
+    padding-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+#Vedant .vblogo {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#Vedant .vbpad2 {
+    padding-inline: 0.5rem;
+}
+
+#Vedant .vbone-part {
+    margin-left: 5rem;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    /* justify-content: center; */
+    align-items: left;
+}
+
+footer {
+    background-color: #0a0d28;
+    display: flex;
+}
+
+#Vedant .vbheading {
+    margin-top: 0rem;
+    font-size: 1.3rem;
+    color: #ae0957;
+    font-family: 'proxima';
+    /* margin-top: 10%; */
+    margin-bottom: 1.2rem;
+}
+
+#Vedant .vbql {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 15%;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    margin-inline: 1.5rem;
+    margin-left: 3%;
+
+}
+
+#Vedant .vbi {
+    /* font-style: none; */
+    /* text-decoration: none; */
+    cursor: pointer;
+
+    margin-top: 0.4rem;
+
+}
+
+/* .subscribe {
+    margin-top: 2%;
+    border: 2px solid red;
+    width: 35%;
+    /* height: 100%; */
+
+
+#Vedant .vbext-links {
+    margin-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 15%;
+}
+
+#Vedant .vbsubmitbox {
+    display: flex;
+    width: 29rem;
+
+    margin-top: 1.6rem;
+
+}
+
+#Vedant .vbmailkl {
+    display: flex;
+    /* border: 2px solid white; */
+    width: 7rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #c1095e;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#Vedant .vbmailkl img {
+    height: 6.5rem;
+    width: 6rem;
+}
+
+#Vedant #container {
+    text-align: center;
+    margin-top: 0.5rem;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    background: white;
+    height: auto;
+    width: 55%;
+    padding: 0.5rem;
+
+    /* position: fixed; */
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+
+
+}
+
+#Vedant #container h2 {
+    font-family: 'Proxima';
+    background: black;
+    /* background: url(https://static.pexels.com/photos/5782/nature-flowers-vintage-plant.jpg); */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    /* background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%); */
+    /* font-family: 'Playfair Display', serif; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    margin: 0;
+
+
+
+}
+
+#Vedant #container p {
+    font-family: 'Proxima';
+    /* font-family: 'Farsan', cursive; */
+    margin: 0.1rem 0 1.5rem 0;
+    font-size: 1rem;
+    color: #607286;
+}
+
+#Vedant #container input {
+    font-family: Proxima;
+    /* 	background: rgba(255, 13, 254, 0.90); */
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    border-radius: 7px;
+    background: #eee;
+    padding: 1em 2em;
+    outline: none;
+    border: none;
+    color: #222;
+    transition: 0.3s linear;
+}
+
+#sub {
+    font-family: Proxima;
+}
+
+::placeholder {
+    color: #999;
+}
+
+#Vedant #container input:focus {
+    background: rgba(0, 0, 333, 0.10);
+}
+
+#Vedant #container button {
+    background-image: linear-gradient(to left, rgba(255, 146, 202, 0.75) 0%, rgba(145, 149, 251, 0.86) 100%);
+    /* box-shadow: 0 9px 25px -5px #df91fb; */
+    font-family: 'Proxima';
+    padding: 0.5em 1.9em;
+    margin-top: 5%;
+    border-radius: 7px;
+    font-size: 1.4em;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    transition: 0.3s linear;
+    margin-bottom: 2%;
+}
+
+#Vedant #container button:hover {
+    transform: translatey(2px);
+}
+
+#Vedant #container button:active {
+    transform: translatey(5px);
+}
+
+#Vedant .vbinp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .pad{
+    margin-top: 2%;
+} */
+
+#Vedant .vbwhite1 {
+    font-family: 'Proxima';
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#Vedant .vbwhite1 a {
+    font-family: 'Proxima';
+    text-decoration: none;
+    color: white;
+
+}
+
+.vblink {
+    text-decoration: none;
+}
+
+.vbmail,
+.vbmap {
+    text-decoration: none;
+}
+
+#Vedant123 {
+    font-family: 'Proxima';
+    background-color: black;
+    color: white;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* .back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 20px;
+    bottom: 20px;
+    z-index: 996;
+    background: #47b2e4;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+
+} */
+
+@media only screen and (min-width:900px) and (max-width:1200px) {
+    #Vedant * {
+        font-size: 13px;
+    }
+
+}
+
+
+@media only screen and (min-width:750px) and (max-width:900px) {
+    #Vedant * {
+        font-size: 10px;
+    }
+
+    #Vedant .vbql {
+        padding-left: 0rem;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    #Vedant .vbmailkl {
+        width: 8rem;
+    }
+
+    #Vedant .vbmailkl img {
+        width: 7.5rem;
+        height: unset;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:750px) {
+    footer {
+        /* flex-wrap: wrap; */
+        justify-content: space-around;
+    }
+
+    #Vedant * {
+        font-size: 10px;
+    }
+
+    #Vedant .vbql {
+        margin-left: 6rem;
+    }
+
+    #Vedant .vbsubmitbox {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    footer {
+        /* flex-wrap: wrap; */
+        justify-content: space-around;
+    }
+
+    #Vedant * {
+        font-size: 8px;
+    }
+
+    #Vedant .vbql {
+        margin-left: 4rem;
+        padding: 0;
+    }
+
+    #Vedant .vbext-links {
+        width: 22%;
+    }
+
+    #Vedant .vbsubmitbox {
+        margin-top: 2rem;
+        scale: 0.75;
+    }
+
+}
+
+@media only screen and (max-width: 300px) {
+    #Vedant .vbql {
+        margin-left: 5rem;
+
+    }
+}
+
+/* Rudra CSS */
+@media only screen and (min-width:900px) and (max-width:1000px) {
+    #Vedant .vbone-part {
+        margin-left: 2rem;
+    }
+
+    .vbheadingFont p {
+        font-size: 15px !important;
+    }
+}
+
+@media only screen and (min-width:750px) and (max-width:900px) {
+
+    .vbone-part,
+    .ql {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .vbsubmitbox {
+        width: 25rem !important;
+    }
+
+    .vbamlhead {
+        font-size: 1.6rem !important;
+    }
+
+    .vbone-part {
+        margin-top: 4% !important;
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+    }
+
+    .vbext-links {
+        width: 15% !important;
+    }
+}
+
+
+@media only screen and (min-width:500px) and (max-width:750px) {
+
+    /* .vbone-part,
+    .ext-links {
+        width: 30% !important;
+    }
+
+    .vbql {
+        width: 36%;
+    }
+
+    .vbsubmitbox {
+        display: none !important;
+    } */
+
+    #Vedant h3 {
+        font-size: 10rem;
+    }
+
+    #Vedant .vbamlhead {
+        padding-left: 1rem;
+        font-size: 1.4rem;
+        margin-top: 1.6rem;
+        /* margin-left: 10rem; */
+
+    }
+
+    #Vedant .vbone-part {
+        margin-left: 2rem;
+        width: 40% !important;
+        /* margin-left: 1.5rem !important; */
+        /* margin-right: -0.5rem !important; */
+    }
+
+    #Vedant .vbheading {
+        font-size: 1rem;
+    }
+
+    #Vedant .vbql {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .vbql {
+        width: 20% !important;
+    }
+
+    .vbext-links {
+        width: 28% !important;
+    }
+
+    .vbsubmitbox {
+        display: none !important;
+    }
+}
+
+/* @media only screen and () */
+
+@media only screen and (min-width:400px) and (max-width:500px) {
+    /* body{
+        left: 0;
+        right: 0;
+    } */
+
+    
+
+    #Vedant h3 {
+        font-size: 10rem;
+    }
+
+    #Vedant .vbamlhead {
+        padding-left: 1rem;
+        font-size: 1.4rem;
+        margin-top: 1.6rem;
+        /* margin-left: 10rem; */
+
+    }
+
+    #Vedant .vbone-part {
+        margin-left: 2rem;
+        width: 40% !important;
+        /* margin-left: 1.5rem !important; */
+        /* margin-right: -0.5rem !important; */
+    }
+
+    #Vedant .vbheading {
+        font-size: 1rem;
+    }
+
+    #Vedant .vbql {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .vbql {
+        width: 20% !important;
+    }
+
+    .vbext-links {
+        width: 28% !important;
+    }
+
+    .vbsubmitbox {
+        display: none !important;
+    }
+}
+
+
+@media only screen and (min-width:350px) and (max-width:400px) {
+    /* .vbamlhead {
+        font-size: 1.3rem !important;
+    }
+
+    .vbone-part {
+        margin-top: 8% !important;
+    }
+
+    .vbsubmitbox{
+        display: none !important;
+    } */
+
+    #Vedant .vbext-links{
+        margin-right: 0rem;
+    }
+
+    #Vedant h3 {
+        font-size: 10rem;
+    }
+
+    #Vedant .vbamlhead {
+        padding-left: 1rem;
+        font-size: 1.4rem;
+        margin-top: 1.6rem;
+        /* margin-left: 10rem; */
+
+    }
+
+    #Vedant .vbone-part {
+        margin-left: 2rem;
+        width: 40% !important;
+        /* margin-left: 1.5rem !important; */
+        /* margin-right: -0.5rem !important; */
+    }
+
+    #Vedant .vbheading {
+        font-size: 1rem;
+    }
+
+    #Vedant .vbql {
+        margin-left: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .vbql {
+        width: 20% !important;
+    }
+
+    .vbext-links {
+        width: 28% !important;
+    }
+
+    .vbsubmitbox {
+        display: none !important;
+    }
+}
+
+
+@media only screen and (max-width:350px) {
+    /* .vbamlhead {
+        font-size: 1.2rem !important;
+    }
+
+    .vbone-part {
+        margin-top: 11% !important;
+        width: 35% !important;
+        margin-left: 0.5rem !important;
+    }
+
+    .vbql {
+        margin-left: 21px !important;
+    }
+
+    .vbsubmitbox{
+        display: none !important;
+    } */
+
+    *{
+        font-size: 10px;
+    }
+
+    #Vedant .vbext-links{
+        margin-right: 0rem;
+        
+    }
+
+    #Vedant h3 {
+        font-size: 10rem;
+    }
+
+    #Vedant .vbamlhead {
+        padding-left: 1rem;
+        font-size: 1.4rem;
+        margin-top: 1.6rem;
+        /* margin-left: 10rem; */
+
+    }
+
+    #Vedant .vbone-part {
+        margin-left: 2rem;
+        width: 40% !important;
+        /* margin-left: 1.5rem !important; */
+        /* margin-right: -0.5rem !important; */
+    }
+
+    #Vedant .vbheading {
+        font-size: 1rem;
+    }
+
+    #Vedant .vbql {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .vbql {
+        width: 20% !important;
+    }
+
+    .vbext-links {
+        width: 28% !important;
+    }
+
+    .vbsubmitbox {
+        display: none !important;
+    }
+
+}

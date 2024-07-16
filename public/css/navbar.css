@@ -1,0 +1,1111 @@
+@font-face {
+  font-family: Helvetica_Bold;
+  src: url("./Helvetica-Neue-Bold_22498.ttf");
+}
+
+@font-face {
+  font-family: Proxima_Bold;
+  font-weight: 600;
+  src: url("./FontsFree-Net-Proxima-Nova-Bold.otf");
+}
+
+@font-face {
+  font-family: Helvetica_Medium;
+  src: url("./HelveticaNeue-Medium.otf");
+}
+
+@font-face {
+  font-family: Proxima;
+  font-weight: 900;
+  src: url("./Proxima\ Nova\ Font.otf");
+}
+
+
+.Rpreload {
+  background-color: black;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: var(--divWidth);
+  z-index: 10000;
+}
+
+.RpreloadImg {
+  /* transform: rotate(0deg); */
+  transform-origin: 57.73502691896258% 50%;
+  width: 10vw;
+  animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Rnavbar {
+  transition: top 0.3s;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  background-color: #00000070;
+}
+
+
+
+.Rnavbar ul li a {
+  letter-spacing: 0.85px;
+  font-weight: 600;
+  padding: 12.5px;
+  margin-left: 16.75px;
+  margin-right: 45.75px;
+  font-family: Helvetica;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+
+.horizontalNavElement {
+  letter-spacing: 0.85px;
+  font-weight: 500;
+  padding: 7px;
+  font-family: Helvetica;
+  text-decoration: none;
+  /* font-size: 5px; */
+  color: white;
+  width: max-content;
+  transition-property: width, height;
+}
+  
+.horizontalNavElement :hover {
+    width: 100px;
+    height: 100px;
+  }
+
+/*  */
+#toggle {
+  display: none;
+}
+
+/**
+  Hamburger
+**/
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 12.5px;
+  margin-left: 45.75px;
+  margin-right: 45.75px;
+  z-index: 6;
+}
+
+.hamburger div {
+  position: relative;
+  /* width: 2vw; */
+  width: 30px;
+  height: 3.75px;
+  border-radius: 0.75px;
+  background-color: white;
+  margin-top: 5.25px;
+  transition: all 0.3s ease-in-out;
+}
+
+/**
+Nav Styles
+**/
+.nav {
+  font-family: Proxima;
+  z-index: 5;
+  position: fixed;
+  min-width: 220px;
+  width: 30%;
+  height: 100%;
+  /* background-color: #090E6B; */
+  background-image: url("https://drive.google.com/uc?export=view&id=1IhyWLQEeyI1Wmqvz6xoCI7iH5LphEe-1");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  top: -100%;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+
+.nav-wrapper {
+  /* display: none; */
+  /* scale: 0; */
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+nav {
+  text-align: left;
+  margin-left: 25%;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #6ecddd;
+  font-size: 2em;
+  display: inline-block;
+  margin-top: 1em;
+  transition: color 0.2s ease-in-out;
+  letter-spacing: 1px;
+}
+
+nav a:before {
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 0.25em;
+  background-color: white;
+  left: -0.5em;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: white;
+}
+
+nav a:hover:before {
+  height: 100%;
+}
+
+.navIcon {
+  margin-left: 2px;
+  margin-right: 5px;
+  height: 25px;
+}
+
+/**
+Animations
+**/
+
+#toggle:checked+.hamburger {
+  transition: all .4s ease-in-out;
+  transition-delay: 0.8s;
+  transform: rotate(45deg);
+}
+
+#toggle:checked+.hamburger .top-bun {
+  transform: translateY(9px);
+  /* transform: rotate(-45deg);
+  margin-top: 25px; */
+}
+
+#toggle:checked+.hamburger .bottom-bun {
+  transition-delay: 0.4s;
+  transform: translateY(-9px) rotate(90deg);
+  /* opacity: 0;
+  transform: rotate(45deg); */
+}
+
+#toggle:checked+.hamburger .meat {
+  width: 0;
+  /* transform: rotate(45deg);
+  margin-top: -7px; */
+}
+
+#toggle:checked+.hamburger+.nav {
+  top: 0;
+  transform: scale(1);
+}
+#toggle:checked+.nav-wrapper{
+  transform: scale(1);
+  display: unset;
+}
+.Rpreload {
+  background-color: black;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: var(--divWidth);
+  z-index: 10000;
+}
+:root {
+  --divWidth: calc(100vw - 10px);
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.Rnavbar {
+    width: 100%;
+    height: 60px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Rnavbar ul li a {
+    letter-spacing: 0.85px;
+    font-weight: 600;
+    padding: 12.5px;
+    margin-left: 16.75px;
+    margin-right: 45.75px;
+    font-family: Helvetica;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+  }
+  
+  .horizontalNavElement {
+    letter-spacing: 0.85px;
+    font-weight: 500;
+    padding: 7px;
+    font-family: Helvetica;
+    text-decoration: none;
+    font-size: 110%;
+    color: white;
+    width: max-content;
+  }
+  
+  /*  */
+  #toggle {
+    display: none;
+  }
+  
+  /**
+    Hamburger
+  **/
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 12.5px;
+    margin-left: 45.75px;
+    margin-right: 45.75px;
+    z-index: 6;
+  }
+  
+  .hamburger div {
+    position: relative;
+    /* width: 2vw; */
+    width: 30px;
+    height: 3.75px;
+    border-radius: 0.75px;
+    background-color: white;
+    margin-top: 5.25px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /**
+  Nav Styles
+  **/
+  .nav {
+    font-family: Proxima;
+    z-index: 5;
+    position: fixed;
+    min-width: 220px;
+    width: 30%;
+    height: 100%;
+    /* background-color: #090E6B; */
+    background-image: url("https://drive.google.com/uc?export=view&id=1IhyWLQEeyI1Wmqvz6xoCI7iH5LphEe-1");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    top: -100%;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+  }
+  
+  .nav-wrapper {
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 100%;
+  }
+  
+  nav {
+    text-align: left;
+    margin-left: 25%;
+  }
+  
+  nav a {
+    position: relative;
+    text-decoration: none;
+    color: #6ecddd;
+    font-size: 2em;
+    display: inline-block;
+    margin-top: 1em;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 1px;
+  }
+  
+  nav a:before {
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 0.25em;
+    background-color: white;
+    left: -0.5em;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: white;
+  }
+  
+  nav a:hover:before {
+    height: 100%;
+  }
+  
+  .navIcon {
+    margin-left: 2px;
+    margin-right: 5px;
+    height: 25px;
+  }
+  
+  /**
+  Animations
+  **/
+  #toggle:checked+.hamburger {
+    transition: all .4s ease-in-out;
+    transition-delay: 0.8s;
+    transform: rotate(45deg);
+  }
+  
+  #toggle:checked+.hamburger .top-bun {
+    transform: translateY(9px);
+    /* transform: rotate(-45deg);
+    margin-top: 25px; */
+  }
+  
+  #toggle:checked+.hamburger .bottom-bun {
+    transition-delay: 0.4s;
+    transform: translateY(-9px) rotate(90deg);
+    /* opacity: 0;
+    transform: rotate(45deg); */
+  }
+  
+  #toggle:checked+.hamburger .meat {
+    width: 0;
+    /* transform: rotate(45deg);
+    margin-Proxima_Boldtop: -7px; */
+  }
+  
+  #toggle:checked+.hamburger+.nav {
+    top: 0;
+    transform: scale(1);
+  }
+
+  /* Footer CSS */
+  /* Footer CSS */
+#Vedant .amlhead{
+
+  font-family: Proxima_Bold;
+
+  color: #ae0957;
+  font-weight: 600;
+  font-size: 2.2rem;
+  margin-bottom: 14px;
+}
+
+#Vedant .add{
+  display: flex;
+}
+
+#Vedant .location{
+
+  padding-right: 0.5rem;
+  font-size: 1.5rem;
+
+  display: flex;
+  align-items: center;
+}
+
+#Vedant .mail1{
+  display: flex;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+#Vedant .maillo{
+  font-size: 1.8rem;
+}
+
+#Vedant .maillo2{
+  padding-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+#Vedant .logo{
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+#Vedant .pad2{
+  padding-inline: 0.5rem;
+}
+
+#Vedant .one-part {
+  margin-left: 5rem;
+  margin-top: 2%; 
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  /* justify-content: center; */
+  align-items: left;
+}
+
+footer {
+  background-color: #0a0d28;
+  display: flex;
+}
+
+#Vedant .heading {
+  font-size: 1.3rem;
+  color: #ae0957;
+  font-family: 'Proxima_Bold';
+  /* margin-top: 10%; */
+  margin-bottom: 1.2rem;
+}
+
+#Vedant .ql {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 15%;
+  margin-top:2rem;
+  padding-left: 2rem;
+  margin-inline: 1.5rem;
+  margin-left: 5%;
+
+}
+
+#Vedant .i {
+  cursor: pointer;
+
+  margin-top: 0.4rem;
+
+}
+
+/* .subscribe {
+  margin-top: 2%;
+  border: 2px solid red;
+  width: 35%;
+  /* height: 100%; */
+
+
+#Vedant .ext-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 15%;
+}
+
+#Vedant .submitbox{
+  display: flex;
+  width: 29rem;
+
+  margin-top: 1.6rem;
+
+}
+
+#Vedant .mailkl{
+  display: flex;
+  /* border: 2px solid white; */
+  width: 10rem;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #c1095e;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#Vedant .mailkl img{
+  height: 9.5rem;
+  width: 9rem;
+}
+
+#Vedant #container {
+  text-align: center; 
+  margin-top: 0.5rem;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  background: white;
+  height: auto;
+  width: 55%;
+  padding: 0.5rem;
+
+  /* position: fixed; */
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+
+
+}
+
+#Vedant #container h2 {
+  background: black;
+  /* background: url(https://static.pexels.com/photos/5782/nature-flowers-vintage-plant.jpg); */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+    /* background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%); */
+  /* font-family: 'Playfair Display', serif; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  margin: 0;
+
+
+
+}
+
+#Vedant #container p {
+  /* font-family: 'Farsan', cursive; */
+  margin: 0.1rem 0 1.5rem 0;
+  font-size: 1rem;
+  color: #607286;
+}
+
+#Vedant #container input {
+  font-family: Proxima;
+  /* 	background: rgba(255, 13, 254, 0.90); */
+  width: auto;
+  display: inline-block;
+  text-align: center;
+  border-radius: 7px;
+  background: #eee;
+  padding: 1em 2em;
+  outline: none;
+  border: none;
+  color: #222;
+  transition: 0.3s linear;
+}
+
+#sub{
+font-family:Proxima;
+}
+
+::placeholder {
+  color: #999;
+}
+
+#Vedant #container input:focus {
+  background: rgba(0, 0, 333, 0.10);
+}
+
+#Vedant #container button {
+  background-image: linear-gradient(to left, rgba(255, 146, 202, 0.75) 0%, rgba(145, 149, 251, 0.86) 100%);
+  /* box-shadow: 0 9px 25px -5px #df91fb; */
+  /* font-family: 'Abel', sans-serif; */
+  padding: 0.5em 1.9em;
+  margin-top: 5%;
+  border-radius: 7px;
+  font-size: 1.4em;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 1em;
+  outline: none;
+  border: none;
+  transition: 0.3s linear;
+  margin-bottom: 2%;
+}
+
+#Vedant #container button:hover {
+  transform: translatey(2px);
+}
+
+#Vedant #container button:active {
+  transform: translatey(5px);
+}
+
+#Vedant .inp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .pad{
+  margin-top: 2%;
+} */
+
+#Vedant .white1{
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mail, .map{
+  text-decoration: none;
+}
+
+#Vedant123{
+  background-color: black;
+  color: white;
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 20px;
+  bottom: 20px;
+  z-index: 996;
+  background: #47b2e4;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+
+}
+
+@media only screen and (min-width:900px) and (max-width:1200px){
+  #Vedant *{
+      font-size: 13px;
+  }
+
+}
+
+
+@media only screen and (min-width:750px) and (max-width:900px){
+  #Vedant *{
+      font-size: 10px;
+  }
+}
+
+@media only screen and (max-width:750px){
+  #Vedant .mailkl{
+      width: 8rem;
+  }
+
+  #Vedant .mailkl img{
+      width: 7.5rem;
+      height: unset;
+  }
+}
+
+@media only screen and (min-width:400px) and (max-width:750px){
+  footer{
+      
+      justify-content: space-around;
+  }
+  #Vedant *{
+      font-size: 10px;
+  }
+  #Vedant .ql{
+      margin-left: 6rem;
+  } 
+
+  #Vedant .submitbox{
+      margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  footer{
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+  #Vedant *{
+      font-size: 8px;
+  }
+  #Vedant .ql{
+      margin-left: 8rem;
+      padding: 0;
+  } 
+
+  #Vedant .ext-links{
+      width: 22%;
+  }
+
+  #Vedant .submitbox{
+      margin-top: 2rem;
+      scale: 0.75;
+  } 
+  
+}
+
+@media only screen and (max-width: 300px){
+  #Vedant .ql{
+      margin-left: 5rem;
+
+}
+}
+
+/* Rudra CSS */
+@media only screen and (max-width:1000px){
+  #Vedant .one-part{
+      margin-left: 2rem;
+  }   
+  .headingFont p{
+      font-size: 15px !important;
+  }
+}
+
+@media only screen and (max-width:900px){
+  
+  .one-part,.ql{
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+  }
+
+  .submitbox{
+      width: 25rem!important;
+  }
+  .amlhead{
+      font-size: 1.6rem !important;    
+  }
+  .one-part{
+      margin-top: 4% !important;
+      margin-left: 2rem !important;
+      margin-right: 2rem !important;
+  }
+
+  .ext-links{
+      width: 15% !important;
+  }
+}
+
+
+@media only screen and (max-width:750px){
+  .one-part,.ext-links{
+      width: 30% !important;
+  }
+  .ql{
+      width: 36%;
+  }
+}
+
+@media only screen and (max-width:500px){
+  .one-part{
+      width: 40% !important;
+      margin-left: 1rem !important;
+      margin-right: -0.5rem !important;
+  }
+  .ql{
+      width: 20% !important;
+  }
+  .ext-links{
+      width: 28% !important;
+  }
+}
+
+
+@media only screen and (max-width:400px){
+.amlhead{
+  font-size: 1.3rem !important;
+}
+.one-part{
+  margin-top: 8% !important;
+}
+}
+
+
+@media only screen and (max-width:350px){
+  .amlhead{
+      font-size: 1.2rem !important;
+  }
+  .one-part{
+      margin-top: 11% !important;
+      width: 35% !important;
+      margin-left: 0.5rem !important;
+  }
+
+  .ql{
+      margin-left: 21px !important;
+  }
+
+}
+
+  @media only screen and (max-width: 1220px) {
+    :root {
+      --divWidth: calc(100vw);
+    }
+  
+    .RcentralWrapper {
+      flex-direction: column;
+      align-items: center;
+      height: fit-content;
+    }
+  
+    .ziframe {
+      pointer-events: all;
+    }
+  
+    .Rtext {
+      width: 100vw;
+      height: 149px;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .RcentralPart {
+      height: fit-content;
+    }
+  
+    .RamlLogoDiv {
+      margin-bottom: 10px;
+    }
+  
+    .RamlLogo {
+      width: 130px
+    }
+  
+    .Raml22 {
+      width: 67vw;
+      max-width: 692.5px;
+      margin-bottom: 17px;
+      margin-top: 17px;
+    }
+  
+    .Rnavbar {
+      height: 50px;
+    }
+  
+  
+  
+    .RrightSide a img {
+      height: 36px;
+      padding: 5px;
+      margin-right: 5px;
+    }
+  
+    .RbottomPart {
+  
+      height: 133px;
+    }
+  
+    .Rca {
+      width: 132px;
+    }
+  
+    .Rca p {
+      width: 132px;
+      margin-bottom: 0rem;
+      font-size: 22px;
+    }
+  
+    #Rrotate {
+      height: 100px;
+    }
+  
+    #RiiiText {
+      font-size: 66px;
+    }
+  
+    .Rback-video {
+      height: 635px;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .nav {
+      width: 40%;
+    }
+  
+    nav {
+      margin-left: 20%;
+    }
+  }
+  
+  @media only screen and (max-width: 775px) {
+    .nav {
+      width: 50%;
+    }
+  
+    .RamlLogo {
+      width: 17.75vw;
+    }
+  
+    .RcentralPart {
+      height: 372.575px;
+    }
+  
+    .RcentralWrapper {
+      margin-right: 0px;
+    }
+  
+    .RrightSide a img {
+      height: 6vw;
+    }
+  
+    .Rwelcome {
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .nav {
+      width: 65%;
+    }
+  
+    nav {
+      margin-left: 10%;
+    }
+  
+    #Rrotate {
+      height: 75px;
+    }
+  
+    #RiiiText {
+      font-size: 50px;
+    }
+  
+    .RmiddlePart {
+      width: 0px;
+      transform: translate(-185px, -25px);
+      justify-content: unset;
+    }
+  
+    .Rca {
+      transform: translateY(25px);
+    }
+  
+    .zpara_theme,
+    .zpara_title {
+      font-size: 100%;
+      text-align: center;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .RrightSide a img {
+      height: 6.5vw;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 450px) {
+    .nav {
+      width: 80%;
+    }
+  
+    nav {
+      margin-left: 10%;
+    }
+  
+    .zae-amt{
+      margin: 40px;
+      scale: 0.9;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .RrightSide a img {
+      height: 8vw;
+    }
+  }
+  
+  @media only screen and (max-width: 350px) {
+    .nav {
+      width: 80%;
+    }
+  
+    nav {
+      margin-left: 10%;
+    }
+  
+    .RmiddlePart {
+      transform: translate(-150px, -25px);
+    }
+  
+    .Rnavbar ul li a {
+      margin: 0px;
+    }
+  
+    .hamburger {
+      margin: 0px;
+    }
+  
+    #Rrotate {
+      height: 50px;
+    }
+  
+    #RiiiText {
+      font-size: 30px;
+    }
+  
+    .Rwelcome {
+      font-size: 24px;
+    }
+  }
+  
+  /* Rudra CSS ends */
+
+  @media screen and (max-width: 1230px) {
+
+    /* .horizontalNavElement{
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 1135px) { */
+    #horizontalNav {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
