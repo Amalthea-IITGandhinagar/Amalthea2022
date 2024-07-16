@@ -1,1 +1,1 @@
-"# Amalthea2022" 
+# Amalthea2022
